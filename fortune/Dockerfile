@@ -3,4 +3,4 @@ MAINTAINER Gordon Chan <github.com/gchan>
 
 RUN apt-get update -y && apt-get install fortunes -y
 
-ENTRYPOINT /usr/games/fortune -a
+CMD /usr/games/fortune -a
