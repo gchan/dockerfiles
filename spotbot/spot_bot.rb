@@ -53,7 +53,10 @@ class SpotBot
   def generate_message(price:, time:)
     formated_time = prices.time.strftime "%a, %d %B %Y at %I:%M %P"
 
-    "Electricity Spot Price is $#{price} per MWh. #{formated_time}."
+    formatted_price       = sprintf('%.2f', price)
+    formatted_price_cents = sprintf('%.2f', price / 10.0)
+
+    "5-min electricity price is $#{formatted_price} per MWh (#{formatted_price_cents} c/kWh). #{formated_time}."
   end
 
   def new_price?

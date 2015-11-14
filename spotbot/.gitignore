@@ -1,2 +1,2 @@
-.env
+*.env*
 latest_time.yml

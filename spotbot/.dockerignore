@@ -2,4 +2,4 @@ Dockerfile
 latest_time.yml
 .dockerignore
 .gitignore
-.env
+*.env*
