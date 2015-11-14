@@ -1,8 +1,8 @@
 ### gordonchan/spotbot
 
-A Dockerized Ruby script to periodically check New Zealand's (electricity prices)[http://www.electricityinfo.co.nz/] and tweets when they are high.
+A Dockerized Ruby script to periodically check New Zealand's [electricity prices](http://www.electricityinfo.co.nz/) and tweets when they are high.
 
-Currently operating the Twitter handle (nzhay250)[https://twitter.com/nzhay250]
+Currently operating the Twitter handle [nzhay250](https://twitter.com/nzhay250)
 
 ### Example Usage
 
