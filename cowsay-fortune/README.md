@@ -21,3 +21,7 @@ $ docker run gordonchan/cowsay-fortune
         \    \        __/
           \____\______/
 ```
+
+#### License
+
+Copyright (c) 2015 Gordon Chan. Released under the MIT License. It is free software, and may be redistributed under the terms specified in the [LICENSE](https://github.com/gchan/dockerfiles/blob/master/LICENSE.txt) file.
