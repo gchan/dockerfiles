@@ -138,7 +138,7 @@ class SpotChecker
 
     twitter = SpotBotTwitter.new
     begin
-      twitter.twitter.user("twitter")
+      puts "Twitter username: #{twitter.twitter.user.screen_name}"
     rescue => error
       puts error.message
       puts "Invalid Twitter credentials"
