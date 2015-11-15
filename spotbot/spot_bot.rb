@@ -98,7 +98,7 @@ class SpotBotPrice
   def initialize(data)
     @price          = data[:prices][-1][:price]
     server_time     = data[:prices][-1][:time]
-    @time           = TZInfo::Timezone.get('Pacific/Auckland').utc_to_local(server_time)
+    @time           = TZInfo::Timezone.get('Pacific/Auckland').utc_to_local(server_time.utc)
     @trading_period = data[:prices][-1][:trading_period]
     @grid_point     = data[:prices][-1][:grid_point]
 
