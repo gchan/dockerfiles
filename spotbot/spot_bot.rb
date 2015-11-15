@@ -107,6 +107,8 @@ class SpotBotPrice
 end
 
 class SpotBotTwitter
+  attr_reader :twitter
+
   def initialize(logger: nil)
     @logger = logger
 
@@ -119,7 +121,7 @@ class SpotBotTwitter
   end
 
   def tweet(message)
-    @twitter.update(message)
+    twitter.update(message)
     @logger.info(message) if @logger
   end
 end
@@ -131,6 +133,15 @@ class SpotChecker
 
     if missing_credentials.any?
       puts "Missing the following environment variable(s): #{missing_credentials}"
+      exit
+    end
+
+    twitter = SpotBotTwitter.new
+    begin
+      twitter.twitter.user("twitter")
+    rescue => error
+      puts error.message
+      puts "Invalid Twitter credentials"
       exit
     end
   end
