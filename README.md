@@ -7,3 +7,5 @@ The images are automatically built and are hosted on Docker Hub under [gordoncha
 ## License
 
 dockerfiles is Copyright (c) 2015 Gordon Chan and is released under the MIT License. It is free software, and may be redistributed under the terms specified in the LICENSE file.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-70790190-2/dockerfiles/README.md?flat)](https://github.com/igrigorik/ga-beacon)
