@@ -2,6 +2,8 @@
 
 The official [nginx:latest](https://hub.docker.com/_/nginx/) with a customised [default.conf](https://github.com/gchan/dockerfiles/blob/master/nginx-ghost/default.conf) designed for reverse proxying to a container running [ghost](https://ghost.org/).
 
+Use [nginx-ssl-ghost](https://github.com/gchan/dockerfiles/blob/master/nginx-ssl-ghost) for the SSL version.
+
 ### Example Usage
 
 ```
