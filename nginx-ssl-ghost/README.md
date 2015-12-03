@@ -36,3 +36,5 @@ We are using the 'moderate' profile cipher suite recommended by [Mozilla](https:
 #### License
 
 Copyright (c) 2015 Gordon Chan. Released under the MIT License. It is free software, and may be redistributed under the terms specified in the [LICENSE](https://github.com/gchan/dockerfiles/blob/master/LICENSE.txt) file.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-70790190-2/dockerfiles/nginx-ssl-ghost/README.md?flat)](https://github.com/igrigorik/ga-beacon)
