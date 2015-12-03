@@ -25,7 +25,7 @@ How do you get the files on the container?
 * You could mount a host directory as a data volume `docker run -d -v /path/to/certs:etc/nginx/certs gordonchan/nginx-ssl-ghost`.
 * You could create and copy the files to a data volume. Then mount the data volume to the container. `docker run -d --volumes-from nginx-data gordonchan/nginx-ssl-ghost`.
 
-Creating a data volume gives the most flexibility as it is independent of a container's life cycle. Managing the set up with Docker Compose is ideal.
+Creating a data volume gives the most flexibility as it is independent of a container's life cycle. Managing the set up with Docker Compose is ideal. See this [docker-compose.yml](https://github.com/gchan/docker-compose-files/blob/master/ghost-ssl/docker-compose.yml) for an example.
 
 #### Nginx Configuration and SSL Cipher Suite
 
