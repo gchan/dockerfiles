@@ -1,4 +1,7 @@
 ### gordonchan/fortune
+
+[![](https://badge.imagelayers.io/gordonchan/fortune:latest.svg)](https://imagelayers.io/?images=gordonchan/fortune:latest 'Get your own badge on imagelayers.io')
+
 A simple image that give you a [fortune](https://en.wikipedia.org/wiki/Fortune_%28Unix%29)
 
 ### Example Usage

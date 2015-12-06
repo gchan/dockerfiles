@@ -1,5 +1,7 @@
 ### gordonchan/ghostbustersay
 
+[![](https://badge.imagelayers.io/gordonchan/ghostbustersay:latest.svg)](https://imagelayers.io/?images=gordonchan/ghostbustersay:latest 'Get your own badge on imagelayers.io')
+
 docker/whalesay [(cowsay)](https://en.wikipedia.org/wiki/Cowsay) but with Ghostbusters ASCII
 
 ### Example Usage
