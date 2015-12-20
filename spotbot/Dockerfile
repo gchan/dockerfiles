@@ -1,4 +1,4 @@
-FROM ruby:2.2.3-onbuild
+FROM ruby:2.2.4-onbuild
 MAINTAINER Gordon Chan <github.com/gchan>
 
 ENTRYPOINT ["./spot_bot.rb"]
