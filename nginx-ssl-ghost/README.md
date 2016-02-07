@@ -14,7 +14,7 @@ $ docker run -d --link my_ghost_container:ghost gordonchan/nginx-ssl-ghost
 
 #### Assumptions
 
-This image assumes the hostname `ghost` will connect to the container running the ghost application. If this is not the correct name, you will need to create an alias as described in the example above. Please note this form of linking is expected to be deprecated and removed in favour of Docker networks.
+This image assumes the hostname `ghost` will connect to the container running the ghost application. If this is not the correct name, you will need to create an alias as described in the example above.
 
 We also assume the default ghost port is exposed (2368).
 
