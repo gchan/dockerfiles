@@ -13,6 +13,7 @@ _I have made modifications for my selfish needs but it should be generic enough 
 * This image assumes the SSL certificate and key files are located at `/etc/nginx/certs/fullchain.pem` and `/etc/nginx/certs/privkey.pem` on the container respectively.
 * The SSL cipher suite is the 'moderate' profile cipher suite recommended by [Mozilla](https://mozilla.github.io/server-side-tls/ssl-config-generator/?server=nginx-1.9.5&openssl=1.0.1e&hsts=yes&profile=intermediate).
 * The SSL cipher suite disables non-EC Diffie-Hellman key exchange to avoid the need to generate a Diffie-Hellman group. For more information visti: https://blog.cloudflare.com/logjam-the-latest-tls-vulnerability-explained/. In a future update, I may write a `entrypoint.sh` to generate a DH group in the container.
+* For connections coming from CloudFlare, preserve the originating IP of the visitor.
 
 #### License
 
