@@ -1,4 +1,4 @@
-FROM ruby:2.3.0-slim
+FROM ruby:2.3.1-slim
 MAINTAINER Gordon Chan <github.com/gchan>
 
 # Install postgres-client-9.5
