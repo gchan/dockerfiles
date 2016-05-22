@@ -1,0 +1,3 @@
+[submodule "imagetragick-rails"]
+	path = imagetragick-rails
+	url = https://github.com/gchan/imagetragick-rails.git
