@@ -6,6 +6,10 @@ The official [nginx:latest](https://hub.docker.com/_/nginx/) with a customised [
 
 Use [nginx-ghost](https://github.com/gchan/dockerfiles/blob/master/nginx-ghost) for the non-SSL version.
 
+#### Let's Encrypt support
+
+The Nginx configuration is also capable of supporting the renewal of SSL/TLS certificates through [Let's Encrypt](https://letsencrypt.org) and its [Webroot](https://certbot.eff.org/docs/using.html#webroot) method for domain validation. The expected webroot path is `/tmp/letsencrypt/www` as specified in [default.conf](https://github.com/gchan/dockerfiles/blob/master/nginx-ssl-ghost/default.conf). See [gordonchan/auto-letsencrypt](https://github.com/gchan/dockerfiles/tree/master/auto-letsencrypt).
+
 ### Example Usage
 
 ```
@@ -25,7 +29,8 @@ As per the [default.conf](https://github.com/gchan/dockerfiles/blob/master/nginx
 How do you get the files on the container?
 * You could copy files to the container using `docker cp`.
 * You could mount a host directory as a data volume `docker run -d -v /path/to/certs:etc/nginx/certs gordonchan/nginx-ssl-ghost`.
-* You could create and copy the files to a data volume. Then mount the data volume to the container. `docker run -d --volumes-from nginx-data gordonchan/nginx-ssl-ghost`.
+* You could create and copy the files to a data volume. Then mount the data volume to the container. `docker run -d -v certs_data:/etc/nginx/certs gordonchan/nginx-ssl-ghost`.
+* You could use a Dockerized script to automatically request, renew and install certificates. See [gordonchan/auto-letsencrypt](https://github.com/gchan/dockerfiles/tree/master/auto-letsencrypt).
 
 Creating a data volume gives the most flexibility as it is independent of a container's life cycle. Managing the set up with Docker Compose is ideal. See this [docker-compose.yml](https://github.com/gchan/docker-compose-files/blob/master/ghost-ssl/docker-compose.yml) for an example.
 
