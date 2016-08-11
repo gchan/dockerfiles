@@ -1,6 +1,6 @@
 ### gordonchan/nginx-unicorn-rails
 
-[![](https://badge.imagelayers.io/gordonchan/nginx-unicorn-rails:latest.svg)](https://imagelayers.io/?images=gordonchan/nginx-unicorn-rails:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/nginx-unicorn-rails.svg)](http://microbadger.com/images/gordonchan/nginx-unicorn-rails "Get your own image badge on microbadger.com")
 
 The official [nginx](https://hub.docker.com/_/nginx/) with a customised [nginx.conf](https://github.com/gchan/dockerfiles/blob/master/nginx-unicorn-rails/nginx.conf) designed for reverse proxying (with SSL support) to a container running a [unicorn](https://unicorn.bogomips.org/) web server.
 

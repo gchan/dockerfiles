@@ -1,6 +1,6 @@
 ### gordonchan/ghost-mailgun
 
-[![](https://badge.imagelayers.io/gordonchan/ghost-mailgun:latest.svg)](https://imagelayers.io/?images=gordonchan/ghost-mailgun:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/ghost-mailgun.svg)](http://microbadger.com/images/gordonchan/ghost-mailgun "Get your own image badge on microbadger.com")
 
 The official [ghost:latest](https://hub.docker.com/_/ghost/) with a customised [config.js](https://github.com/gchan/dockerfiles/blob/master/ghost-mailgun/config.js) to allow easy configuration of the [Mailgun](https://mailgun.com) credentials and blog URL through environment variables.
 

@@ -1,6 +1,6 @@
 ### gordonchan/spotbot
 
-[![](https://badge.imagelayers.io/gordonchan/spotbot:latest.svg)](https://imagelayers.io/?images=gordonchan/spotbot:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/spotbot.svg)](http://microbadger.com/images/gordonchan/spotbot "Get your own image badge on microbadger.com")
 
 A Dockerized Ruby script to periodically check New Zealand's [electricity prices](http://www.electricityinfo.co.nz/) and tweets when they are high.
 

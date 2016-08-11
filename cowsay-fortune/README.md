@@ -1,6 +1,6 @@
 ### gordonchan/cowsay-fortune
 
-[![](https://badge.imagelayers.io/gordonchan/cowsay-fortune:latest.svg)](https://imagelayers.io/?images=gordonchan/cowsay-fortune:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/cowsay-fortune.svg)](http://microbadger.com/images/gordonchan/cowsay-fortune "Get your own image badge on microbadger.com")
 
 whalesay [(cowsay)](https://en.wikipedia.org/wiki/Cowsay) with [fortune](https://en.wikipedia.org/wiki/Fortune_ %28Unix%29)
 

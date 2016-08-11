@@ -1,6 +1,6 @@
 ### gordonchan/nginx-ssl-ghost
 
-[![](https://badge.imagelayers.io/gordonchan/nginx-ssl-ghost:latest.svg)](https://imagelayers.io/?images=gordonchan/nginx-ssl-ghost:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/nginx-ssl-ghost.svg)](http://microbadger.com/images/gordonchan/nginx-ssl-ghost "Get your own image badge on microbadger.com")
 
 The official [nginx:latest](https://hub.docker.com/_/nginx/) with a customised [default.conf](https://github.com/gchan/dockerfiles/blob/master/nginx-ssl-ghost/default.conf) designed for reverse proxying (with SSL support) to a container running [ghost](https://ghost.org/).
 

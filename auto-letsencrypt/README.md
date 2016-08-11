@@ -1,6 +1,6 @@
 ### gordonchan/auto-letsencrypt
 
-[![](https://badge.imagelayers.io/gordonchan/auto-letsencrypt:latest.svg)](https://imagelayers.io/?images=gordonchan/auto-letsencrypt:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/auto-letsencrypt.svg)](http://microbadger.com/images/gordonchan/auto-letsencrypt "Get your own image badge on microbadger.com")
 
 A Docker image to automatically request and renew SSL/TLS certificates from [Let's Encrypt](https://letsencrypt.org/) using [certbot](https://certbot.eff.org/about/) and the [Webroot](https://certbot.eff.org/docs/using.html#webroot) method for domain validation. This image is also capable of sending a `HUP` signal to a Docker container running a web server in order to use the freshly minted certificates.
 
@@ -82,7 +82,7 @@ TODO
 * **EMAIL**: Email for urgent notices and lost key recovery. e.g. `your@email.tld`.
 * **WEBROOT_PATH** Path to the letsencrypt directory in the web server for checks. Defaults to `/var/www`.
 * **CERTS_PATH**: Optional. Copy the new certificates to the specified path. e.g. `/etc/nginx/certs`.
-* **SERVER_CONTAINER**: Optional. The Docker container name of the server you wish to send a `HUP` signal to in order to reload its configuration and use the next certificates.
+* **SERVER_CONTAINER**: Optional. The Docker container name of the server you wish to send a `HUP` signal to in order to reload its configuration and use the new certificates.
 * **CHECK_FREQ**: How often (in days) to perform checks. Defaults to `30`.
 
 #### License

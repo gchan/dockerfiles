@@ -1,6 +1,6 @@
 [submodule "imagetragick-rails"]
 	path = imagetragick-rails
-	url = https://github.com/gchan/imagetragick-rails.git
+	url = git@github.com:gchan/imagetragick-rails.git
 [submodule "ruby-httpoxy"]
 	path = ruby-httpoxy
-	url = git://github.com/gchan/ruby-httpoxy
+	url = git@github.com:gchan/ruby-httpoxy.git

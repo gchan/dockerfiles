@@ -1,6 +1,6 @@
 ### gordonchan/postgres-s3-backup
 
-[![](https://badge.imagelayers.io/gordonchan/postgres-s3-backup:latest.svg)](https://imagelayers.io/?images=gordonchan/postgres-s3-backup:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/postgres-s3-backup.svg)](http://microbadger.com/images/gordonchan/postgres-s3-backup "Get your own image badge on microbadger.com")
 
 A Docker image designed to make daily backups of a Postgres database at 3pm UTC (3am NZST). Backups are stored locally on the container but are also uploaded to [Amazon S3](https://aws.amazon.com/s3/). Email notifications are delivered on every backup attempt.
 

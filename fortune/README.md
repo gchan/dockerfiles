@@ -1,6 +1,6 @@
 ### gordonchan/fortune
 
-[![](https://badge.imagelayers.io/gordonchan/fortune:latest.svg)](https://imagelayers.io/?images=gordonchan/fortune:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/gordonchan/fortune.svg)](http://microbadger.com/images/gordonchan/fortune "Get your own image badge on microbadger.com")
 
 A simple image that give you a [fortune](https://en.wikipedia.org/wiki/Fortune_%28Unix%29)
 
