@@ -74,7 +74,47 @@ docker run -d
 
 #### An example using Docker Compose
 
-TODO
+```
+version: '2'
+
+services:
+  server:
+    container_name: server
+    image: gordonchan/nginx-ssl-ghost
+    volumes:
+      - certs:/etc/nginx/certs
+      - /tmp/letsencrypt/www:/tmp/letsencrypt/www
+    links:
+      - app:ghost
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+
+  letsencrypt:
+    container_name: server
+    image: gordonchan/auto-letsencrypt
+    links:
+      - server
+    volumes:
+      - /var/log/letsencrypt/:/var/log/letsencrypt
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /var/lib/letsencrypt:/var/lib/letsencrypt
+      - /tmp/letsencrypt/www:/tmp/letsencrypt/www
+      - certs:/etc/nginx/certs
+    environment:
+      - EMAIL=elliot@allsafe.com
+      - SERVER_CONTAINER=server
+      - WEBROOT_PATH=/tmp/letsencrypt/www
+      - CERTS_PATH=/etc/nginx/certs
+      - DOMAINS=e-corp-usa.com www.e-corp-usa.com
+      - CHECK_FREQ=7
+    restart: unless-stopped
+
+  volumes:
+    certs:
+```
 
 #### Environment variables
 
