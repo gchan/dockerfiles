@@ -38,15 +38,13 @@ Creating a data volume gives the most flexibility as it is independent of a cont
 
 As per the [default.conf](https://github.com/gchan/dockerfiles/blob/master/nginx-ssl-ghost/default.conf), all HTTP requests are redirected (301 Permanent Redirect) to the HTTPS equivalent.
 
-We are using the 'moderate' profile cipher suite recommended by [Mozilla](https://mozilla.github.io/server-side-tls/ssl-config-generator/?server=nginx-1.9.5&openssl=1.0.1e&hsts=yes&profile=intermediate).
+We are using the 'moderate' profile cipher suite recommended by [Mozilla](https://mozilla.github.io/server-side-tls/ssl-config-generator/?server=nginx-1.10.1&openssl=1.0.1k&hsts=yes&profile=intermediate).
 
-##### Non-EC Diffie-Hellman support removed
+##### 2048-bit Diffie-Hellman Group
 
 With the [discovered weakness](https://weakdh.org/) with Diffie-Hellman key exchange, the recommendation is generate a strong Diffie-Hellman group greater than 1024 bits (e.g. 2048 bits) or simply [not support non-elliptic curve](https://blog.cloudflare.com/logjam-the-latest-tls-vulnerability-explained/) Diffie-Hellman key exchange.
 
-For ease of use of this Docker image, we have opted to disable non-EC Diffie-Hellman key exchange by appending the directive '!DH' to the cipher configuration. For ease of auditability, we have not heavily modified the cipher suite (by removing non-EC DH cipher suites) provided by Mozilla.
-
-All modern (and some older) browsers support Elliptic curve Diffie–Hellman key exchange so removing non-EC Diffie-Hellman cipher suites should not affect the overwhelming majority of users.
+A 2048-bit Diffie-Hellman group is generated when the container is first launched which may take some time.
 
 #### License
 
