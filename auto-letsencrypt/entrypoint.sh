@@ -20,7 +20,7 @@ WEBROOT_PATH="${WEBROOT_PATH:-"/var/www"}"
 check() {
   echo "* Starting webroot initial certificate request script..."
 
-  certbot certonly --webroot --agree-tos --noninteractive --text \
+  certbot certonly --webroot --agree-tos --noninteractive --text --expand \
       --email ${EMAIL} \
       --webroot-path ${WEBROOT_PATH} \
       ${CERTBOT_DOMAINS}
