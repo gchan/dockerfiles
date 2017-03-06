@@ -4,3 +4,6 @@
 [submodule "ruby-httpoxy"]
 	path = ruby-httpoxy
 	url = https://github.com/gchan/ruby-httpoxy.git
+[submodule "auto-letsencrypt"]
+	path = auto-letsencrypt
+	url = git://github.com/gchan/auto-letsencrypt
