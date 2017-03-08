@@ -8,6 +8,15 @@ _This Docker image was created for my own selfish needs. It could be useful for 
 
 Usage information available on Gogs [GitHub](https://github.com/gogits/gogs/tree/master/docker#docker-for-gogs). Configuration [cheat sheet](https://gogs.io/docs/advanced/configuration_cheat_sheet) is a useful reference.
 
+## Features (configuration options)
+
+* Disable registration
+* Must be signed in to view anything
+* Disable Gravatar and Federated Avatar
+* sqlite3 DB - no external dependencies :)
+* Force private repositories
+* robots.txt to prevent crawlers and indexers
+
 #### License
 
 Copyright (c) 2017 Gordon Chan. Released under the MIT License. It is free software, and may be redistributed under the terms specified in the [LICENSE](https://github.com/gchan/dockerfiles/blob/master/LICENSE.txt) file.
